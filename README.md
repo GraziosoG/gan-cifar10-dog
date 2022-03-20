@@ -78,25 +78,61 @@ I saved the models for the above 4 epochs for training dog images and sample a s
   <img src="https://user-images.githubusercontent.com/60123440/159188274-20ec945e-0b15-4c5a-a586-ea7afb6abc29.png" alt="78 epochs dog images generated" width="600px"/>
 </p>
 
-*78 epoch*
+*78 epochs*
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60123440/159188278-f1dc1dee-2d69-434e-b13d-01f7289f060d.png" alt="101 epochs dog images generated" width="600px"/>
 </p>
 
-*101 epoch*
+*101 epochs*
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60123440/159188280-3fa509f3-a2a2-4437-b672-d2222d2740a2.png" alt="123 epochs dog images generated" width="600px"/>
 </p>
 
-*123 epoch*
+*123 epochs*
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60123440/159188283-9f548dfa-7be8-47b1-8754-489655bba90e.png" alt="128 epochs dog images generated" width="600px"/>
 </p>
 
-*128 epoch*
+*128 epochs*
 
 Again, the contour of the object in the image got clearer as the number of epochs increased, there is more color in the images as well. Increasing the number of epochs would likely increase the interpretability and the quality of these dog images perceived by humans. Nevertheless, these images are astonishing as they are learned only from perturbing random numbers. 
 
+## Dog and Cat Images
+I also ran another GAN model with 5,000 images of cats and dogs each as real images. The generator was trained with 113 epochs. 
+
+Below are some images of the generator at the specified epochs. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60123440/159188897-9846e966-31ad-48e4-b6d2-0d51bd0bbad7.png" alt="15 epochs dog and cat images" width="600px"/>
+</p>
+
+*15 epochs*
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60123440/159188898-2cf82ac8-d655-4746-8c68-cda2e58e4a92.png" alt="30 epochs dog and cat images" width="600px"/>
+</p>
+
+*30 epochs*
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60123440/159188904-9d55fb17-2a9d-4cc9-ac84-95e3bce95d6a.png" alt="100 epochs dog and cat images" width="600px"/>
+</p>
+
+*100 epochs*
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60123440/159188909-aa4aa766-890c-4397-99df-464cb8ae4d08.png" alt="109 epochs dog and cat images" width="600px"/>
+</p>
+
+*109 epochs*
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60123440/159188915-717065bf-9092-4cf3-81ff-528f497ae0b5.png" alt="113 epochs dog and cat images" width="600px"/>
+</p>
+
+*113 epochs*
+
+For the epochs trained, I observed some images with some pointy ears suggesting the image of a cat, but other facial parts were not that clear for a cat face. I drew similar conclusions as above with dog images that more epochs will yield better results, including a clearer image of these animals. In addition, the output would be more favorable if the model was trained on higher resolution images. However, due to the computational power constraint, the CIFAR-10 dataset was the best choice. Nevertheless, the GAN model has high potential and encourage training GAN with high quality images and more images for more epochs to generate artificial, yet interesting and intriguing images. 
